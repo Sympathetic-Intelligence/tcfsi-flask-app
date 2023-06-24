@@ -1,5 +1,7 @@
 # tcfsi-flask-app
 
+## WARNING: Changes to the master branch are automatically deployed live.
+
 ## Requirements
 
 * python 3
