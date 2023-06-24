@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+
+
+{% block content %}
+{% include 'concept_nav.html' %}
+
+
+<div id="si_home">
+	<h2 class="ms-5 outline-text depthfullness">DEPTHFULLNESS</h2>
+	
+	<div class="row circles-concept-bg p-3"> <!--  d-flex flex-column min-vh-100 justify-content-center align-items-center -->
+	    <div class="col-lg">
+	    	<!-- <div class="tier-label">LABEL</div> -->
+	    	<svg id="concept"></svg>
+	    	
+	    </div>
+	    <div class="col-lg-5 pe-5 position-relative instructions d-flex">
+			<div class="my-auto">
+		    	<h4><i class="bi bi-chevron-double-left concept-instructions-chevron"></i> Hover over the graphic to find out more about the tiers. Click on any tier to learn more about that tier!</h2>
+		    		<p>&nbsp;</p>
+		    		<p>&nbsp;</p>
+		    		<p>&nbsp;</p>
+		    	<div class="video-wrapper-100">
+					<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/yKR0uJ14Eg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+	    </div>
+		<div class="col-lg-5 pe-5 position-relative tiers-container d-none">
+			
+			<div class="position-absolute top-0 start-0 tier-icon tier-icon-1 d-none"></div>
+			
+			<div id="tier_text">
+				<h3>Tier 1 – Intrapersonal/Within</h3> 
+				<p>Sympathetic Intelligence at the individual level, relies on the 3
+				primary intelligence faculties of Gut, Mind and Heart. The SI sense and response
+				capacity is determined by the brain’s capacity to integrate these three primary
+				intelligences into one simultaneous behavior. Using this Executive capability we
+				process stimuli prompted senses and convert them into feelings that are either
+				instinctual, cognitive or emotional, which we then rely upon to respond in a cohesive
+				manner that is In Sympathy with the context of our surroundings. The integration is
+				seamless, spontaneous and continual and focused on returning behavior that is
+				appropriate and assures life quality on a continuum from survival to optimal.
+				</p>
+				<h3>Tier 2 – Interpersonal/Between</h3> 
+				<p>Sympathetic Intelligence at this level is driven by a survivalist Need, Desire and Capacity to belong or be connected by the individual, but extends intelligence beyond the individual and is said to be within, between and amongst all of us. It starts with person-to-person engagement and builds to an ever-strengthening attachment with those immediately around each individual extending to a social network as we become members of groups such as partnerships, teams and communities. We first match, then connect and bond. Sympathetic Intelligence at this level becomes a multi-layered Collective phenomenon that manifests in a multitude of ways from flow states visible in teams to the vibes felt in audiences.
+				</p>
+				<h3>Tier 3 – Extrapersonal/Amongst</h3> 
+				<p>
+				Sympathetic Intelligence at this level is visible in the day to day activities of societies through their cultures, conformity and compliance through common purpose, adherence to standards and norms, including the rules and laws of order necessary for a community to execute on the social contract deeply embodied in our communal existence. At this level it is not possible for it to present in collective spontaneous behavior, but can present as a sense of national pride or togetherness visible during certain special occasions. We rely on this level of Sympathetic Intelligence as we Live, Learn and Work.</p>
+			</div>
+			<div class="tier-graphics">
+			</div>
+			
+		</div>
+	</div>
+</div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/d3-arrow@0.0.25/dist/d3-arrow.min.js"></script>
+
+<script src="{{url_for('static', filename='js/si-circles.js')}}"></script>
+
+
+{% endblock %}

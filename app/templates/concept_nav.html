@@ -1,0 +1,21 @@
+<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-main p-0 bd-navbar">
+	<div class="container-fluid">
+		<a class="navbar-brand text-secondary" href="{{ url_for('concept_home', theme='concept') }}"><img src="{{ url_for('static', filename='images/concept-logo.svg') }}" alt="The Concept of Sympathetic Intelligence"></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse row justify-content-between" id="navbarNavAltMarkup">
+			<div class="navbar-nav col-auto ms-md-auto text-right">
+				<a href="{{ url_for('tiers', theme='concept') }}" id="tiers" class="nav-link active"><span>The Tiers</span></a>
+				<a href="{{ url_for('origins', theme='concept') }}" id="origins" class="nav-link"><span>Origins</span></a>
+				<span class="nav-link">|</span>
+				<a href="{{ url_for('socioneurology', theme='concept') }}" id="socioneurology" class="nav-link"><span>Socio-Neurology</span></a>
+				<a href="{{ url_for('applications', theme='concept') }}" id="applications" class="nav-link"><span>Applications</span></a>
+				<a href="{{ url_for('depthfulness', theme='concept') }}" id="depthfulness" class="nav-link"><span>Depthfulness</span></a>
+				<a href="{{ url_for('components', theme='concept') }}" id="components" class="nav-link"><span>Components</span></a>
+				<a href="{{ url_for('experiments', theme='concept') }}" id="experiments" class="nav-link"><span>Experiments</span></a>
+				<a href="{{ url_for('videos', theme='concept') }}" id="videos" class="nav-link"><span>Videos</span></a>
+			</div>
+		</div>
+	</div>
+</nav>

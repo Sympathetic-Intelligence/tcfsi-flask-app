@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% include 'center_nav.html' %}
+
+<div class="container-fluid min-vh-100 d-flex flex-column">	
+
+			<div class="row big-image center-home">
+				<div class="col-lg-3 d-flex flex-column justify-content-center align-items-center">
+					<h2 class="d-none d-lg-block">Bringing depth to life</h2>
+				</div>
+				<div class="col-lg-5" id="home_top">
+					<p class="d-none d-lg-block lead">
+						Sympathetic Intelligence is that innate regulatory sense and response mechanism which each of us has and which binds us all together as a species. It is present at that point of inflection which is at the center of every human transaction, the measure of which is seen in the degree of care exhibited by our behavior and the result of which can be a better society for all.
+					</p> 
+					<div class="arr-down position-absolute top-100 start-50 translate-middle d-none d-lg-block">
+						<a href="#home_bot"><img src="{{ url_for('static', filename='images/arr-down.svg') }}"></a>
+					</div> 
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+				
+			<div class="row mt-4">
+				<div class="col-3"></div>
+				<div class="col-lg-5">
+					<h2 class="d-lg-none">Bringing depth to life</h2>
+					<div id="home_top_mobile">
+						<p class="d-lg-none">
+							Sympathetic Intelligence is that innate regulatory sense and response mechanism which each of us has and which binds us all together as a species. It is present at that point of inflection which is at the center of every human transaction, the measure of which is seen in the degree of care exhibited by our behavior and the result of which can be a better society for all.
+						</p>
+					</div>
+					
+					<a name="home_bot"></a>
+					<div id="home_bottom">
+						To learn more about the concept and the theory behind it, visit the Concept Section of this site.
+					</div> 
+				</div>
+			</div>
+
+		</div> <!-- container -->
+
+
+{% endblock %}

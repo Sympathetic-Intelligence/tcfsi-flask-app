@@ -1,0 +1,53 @@
+<header class="navbar navbar-expand-lg sticky-top navbar-light bg-light bd-navbar">
+	<nav class="container-fluid bd-gutter flex-wrap flex-lg-nowrap d-flex align-items-end">
+    	<a class="navbar-brand text-secondary" href="{{ url_for('center_home', theme='center') }}"><img src="{{ url_for('static', filename='images/center-logo.svg') }}" alt="The Center for Sympathetic Intelligence"></a>
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+
+	    <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbarNavDropdown">
+	      <ul class="navbar-nav">
+	      	
+	        <li class="nav-item dropdown">
+
+		      <a class="nav-link d-inline-block pe-0" href="{{ url_for('about', theme='center') }}" role="button" id="about"><span>About</span></a>
+			  <a href="#" class="nav-link d-inline-block dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></a>
+
+	          <ul class="dropdown-menu">
+	            <li><a class="dropdown-item" href="{{ url_for('mission', theme='center') }}" id="mission">Mission</a></li>
+	            <li><a class="dropdown-item" href="{{ url_for('board', theme='center') }}" id="board">Board of Directors</a></li>
+	          </ul>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link d-inline-block pe-0" href="{{ url_for('panels', theme='center') }}" role="button" id="panels"><span>Panels</span></a>
+	          <a href="#" class="nav-link d-inline-block dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></a>
+
+	          <ul class="dropdown-menu">
+	            <li><a class="dropdown-item" href="{{ url_for('police_panel', theme='center') }}">Police Panel</a></li>
+	            <li><a class="dropdown-item" href="{{ url_for('education_panel', theme='center') }}">Education Panel</a></li>
+	            <li><a class="dropdown-item" href="{{ url_for('arts_panel', theme='center') }}">Arts Panel</a></li>
+	            <li><a class="dropdown-item" href="{{ url_for('healthcare_panel', theme='center') }}">Healthcare Panel</a></li>
+	          </ul>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="{{ url_for('publications', theme='center') }}" id="publications"><span>Publications</span></a>
+	        </li>
+
+ 			<li class="nav-item dropdown">
+	          <a class="nav-link d-inline-block pe-0" href="{{ url_for('contributing', theme='center') }}" role="button" id="contributing"><span>Contributing</span></a>
+	          <a href="#" class="nav-link d-inline-block dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></a>
+
+	          <ul class="dropdown-menu">
+	            <li><a class="dropdown-item" href="{{ url_for('research', theme='center') }}">Research</a></li>
+	            <li><a class="dropdown-item" href="{{ url_for('volunteering', theme='center') }}">Volunteering</a></li>
+	            <li><a class="dropdown-item" href="{{ url_for('donations', theme='center') }}">Donations</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="nav-item">
+	          <a class="nav-link" href="{{ url_for('contact', theme='center') }}" id="contact"><span>Contact</span></a>
+	        </li>
+	      </ul>
+	    </div>
+	</nav>
+</header>

@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% include 'concept_nav.html' %}
+
+<div class="container-fluid min-vh-100 d-flex flex-column">	
+
+	<div class="row pt-3">
+
+		<div class="col-lg-3">
+		</div>
+
+		<div class="col-lg-5">
+			<h2 class="mt-3 mb-3">Videos</h2>
+			<div class="video-wrapper">
+				<div class="video-container">
+					<iframe src="https://www.youtube.com/embed/NmiwAV9i5cY?title=0&byline=0&portrait=0" width="800" height="450" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<p>What do we mean by "Sympathy"?</p>
+			<div class="video-wrapper">
+				<div class="video-container">
+					<iframe src="https://www.youtube.com/embed/q2bykgueC1I?title=0&byline=0&portrait=0" width="800" height="450" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<p>Why is the Center Affiliated with SOS</p>	
+		</div>	
+		
+		<div class="col-lg-4">
+		</div>
+		
+	</div>
+</div>
+
+{% endblock %}
