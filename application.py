@@ -48,9 +48,9 @@ def socioneurology():
 def applications():
     return render_template('applications.html')
 
-@application.route('/experiments')
-def experiments():
-    return render_template('experiments.html')
+@application.route('/research')
+def research():
+    return render_template('research.html')
 
 @application.route('/videos')
 def videos():
@@ -100,10 +100,6 @@ def publications():
 @application.route('/contributing')
 def contributing():
     return render_template('contributing.html')
-
-@application.route('/contributing/research')
-def research():
-    return render_template('research.html')
 
 @application.route('/contributing/volunteering')
 def volunteering():
