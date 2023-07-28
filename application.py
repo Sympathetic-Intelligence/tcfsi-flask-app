@@ -76,7 +76,6 @@ def board():
 def panels():
     return render_template('panels.html')
 
-
 @application.route('/panels/police')
 def police_panel():
     return render_template('police_panel.html')
