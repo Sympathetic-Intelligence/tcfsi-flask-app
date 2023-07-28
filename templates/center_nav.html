@@ -8,32 +8,34 @@
 	    <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbarNavDropdown">
 	      <ul class="navbar-nav">
 	      	
-	        <li class="nav-item dropdown">
+	        <li class="nav-item ms-2 dropdown">
 
 		      <a class="nav-link d-inline-block pe-0" href="{{ url_for('about', theme='center') }}" role="button" id="about"><span>About</span></a>
-			  <a href="#" class="nav-link d-inline-block dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></a>
+			  <a href="#" class="nav-link d-inline-block dropdown-toggle ps-0" data-bs-toggle="dropdown" aria-expanded="false"></a>
 
 	          <ul class="dropdown-menu">
 	            <li><a class="dropdown-item" href="{{ url_for('mission', theme='center') }}" id="mission">Mission</a></li>
 	            <li><a class="dropdown-item" href="{{ url_for('board', theme='center') }}" id="board">Board of Directors</a></li>
 	          </ul>
 	        </li>
-	        <li class="nav-item dropdown">
+	        <li class="nav-item ms-2 dropdown">
 	          <a class="nav-link d-inline-block pe-0" href="{{ url_for('panels', theme='center') }}" role="button" id="panels"><span>Panels</span></a>
-	          <a href="#" class="nav-link d-inline-block dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></a>
+	          <a href="#" class="nav-link d-inline-block dropdown-toggle ps-0" data-bs-toggle="dropdown" aria-expanded="false"></a>
 
 	          <ul class="dropdown-menu">
 	            <li><a class="dropdown-item" href="{{ url_for('education_panel', theme='center') }}">Education Panel</a></li>
 	            <li><a class="dropdown-item" href="{{ url_for('healthcare_panel', theme='center') }}">Healthcare Panel</a></li>	            	            <li><a class="dropdown-item" href="{{ url_for('police_panel', theme='center') }}">Police Panel</a></li>
 	          </ul>
 	        </li>
-	        <li class="nav-item">
+	        <li class="nav-item ms-2">
 	          <a class="nav-link" href="{{ url_for('publications', theme='center') }}" id="publications"><span>Publications</span></a>
 	        </li>
-
- 			<li class="nav-item dropdown">
+	         <li class="nav-item ms-2">
+	          <a class="nav-link" href="{{ url_for('research', theme='center') }}" id="research"><span>Research</span></a>
+	        </li>
+ 			<li class="nav-item ms-2 dropdown">
 	          <a class="nav-link d-inline-block pe-0" href="{{ url_for('contributing', theme='center') }}" role="button" id="contributing"><span>Contributing</span></a>
-	          <a href="#" class="nav-link d-inline-block dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></a>
+	          <a href="#" class="nav-link d-inline-block dropdown-toggle ps-0	" data-bs-toggle="dropdown" aria-expanded="false"></a>
 
 	          <ul class="dropdown-menu">
 	            <li><a class="dropdown-item" href="{{ url_for('volunteering', theme='center') }}">Volunteering</a></li>
@@ -41,7 +43,7 @@
 	          </ul>
 	        </li>
 
-	        <li class="nav-item">
+	        <li class="nav-item ms-2">
 	          <a class="nav-link" href="{{ url_for('contact', theme='center') }}" id="contact"><span>Contact</span></a>
 	        </li>
 	      </ul>
