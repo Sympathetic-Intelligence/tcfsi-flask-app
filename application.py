@@ -56,9 +56,9 @@ def research():
 def videos():
     return render_template('videos.html')
 
-@application.route('/components')
-def components():
-    return render_template('components.html')
+@application.route('/elements')
+def elements():
+    return render_template('elements.html')
 
 @application.route('/about')
 def about():
