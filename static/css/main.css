@@ -124,7 +124,8 @@ html[data-bs-theme='center'] .big-image.center-home [class^='col']{
     background-repeat: no-repeat;
     background-size: 450px;
     background-position-x: -225px;
-    background-position-y: calc(1% + 125px);
+/*     background-position-y: calc(1% + 125px); */
+    background-position-y: 1%;
     color: #fff;
 }
 .big-image{
