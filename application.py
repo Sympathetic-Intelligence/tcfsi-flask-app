@@ -117,6 +117,42 @@ def contact():
 def sos():
     return render_template('sos.html')
 
+@application.route('/aspects/processification')
+def processification():
+    return render_template('aspects/processification.html')
+
+@application.route('/aspects/perspective_deficit')
+def perspective_deficit():
+    return render_template('aspects/perspective_deficit.html')
+
+@application.route('/aspects/revisable_inference')
+def revisable_inference():
+    return render_template('aspects/revisable_inference.html')
+
+@application.route('/aspects/presence_and_reflections')
+def presence_and_reflections():
+    return render_template('aspects/presence_and_reflections.html')
+
+@application.route('/aspects/reflective_spontaneity')
+def reflective_spontaneity():
+    return render_template('aspects/reflective_spontaneity.html')
+
+@application.route('/aspects/countering')
+def countering():
+    return render_template('aspects/countering.html')
+
+@application.route('/aspects/subliminal_exposition')
+def subliminal_exposition():
+    return render_template('aspects/subliminal_exposition.html')
+
+@application.route('/aspects/agency')
+def agency():
+    return render_template('aspects/agency.html')
+
+
+
+
+
 
 # run the application.
 if __name__ == "__main__":

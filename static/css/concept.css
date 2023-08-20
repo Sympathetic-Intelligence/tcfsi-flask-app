@@ -29,6 +29,11 @@ html[data-bs-theme='concept'] .h2, html[data-bs-theme='concept'] h6{
     color: #ffffff;
 }
 
+a{
+	color:#fee201;
+}
+
+
 
 html[data-bs-theme='concept'] .navbar-main{
 	background: url("../images/bg-gradient-lt.svg") no-repeat center center fixed; 
