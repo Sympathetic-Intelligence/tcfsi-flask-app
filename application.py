@@ -92,9 +92,9 @@ def education_panel():
 def healthcare_panel():
     return render_template('healthcare_panel.html')
 
-@application.route('/publications')
-def publications():
-    return render_template('publications.html')
+@application.route('/articles')
+def articles():
+    return render_template('articles.html')
 
 @application.route('/contributing')
 def contributing():
