@@ -2,7 +2,7 @@
 
 {% block content %}
 {% include 'concept_nav.html' %}
-<div class="container-fluid min-vh-100 d-flex flex-column">	
+<div class="container-fluid min-vh-100 d-flex flex-column" data-bs-theme='concept'>	
 
 	<div class="row pt-3">
 
@@ -13,41 +13,84 @@
 			<h2 class="mt-3 mb-3">Aspects</h2>
 			<p>Sympathetic Intelligence is ubiquitous. However, many aspects of our lives, viewed through the lens of Sympathetic Intelligence take on a whole new meaning and significance. We describe some of these aspects as follows:-
 			</p>
-				<!-- <ul class="fs-5">
-					<li>Processification</li>
-					<li>Perspective Deficit</li>
-					<li>Revisable Inference</li>
-					<li>Presence and Reflections</li>
-					<li>Reflective Spontaneity</li>
-					<li>Countering (Countering)</li>
-					<li>Subliminal Exposition</li>
-					<li>Agency</li>
+			<div class="accordion accordion-flush" id="accordionFlush">
+			  <div class="accordion-item">
+			    <h4 class="accordion-header">
+			      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+			        Processification
+			      </button>
+			    </h4>
+			    <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+			      <div class="accordion-body">
+			      	<p>As a matter of fact, every purpose needs a process, and stated simply; processification is the placement of process over purpose. It occurs when the process takes precedence over the purpose it was created to serve....<a href="{{ url_for('processification', theme='concept') }}">Read More</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="accordion-item">
+			    <h4 class="accordion-header">
+			      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+			        Perspective Deficit
+			      </button>
+			    </h4>
+			    <div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+			      <div class="accordion-body">Placeholder content for this accordion. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+			    </div>
+			  </div>
+			  <div class="accordion-item">
+			    <h4 class="accordion-header">
+			      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+			        Revisable Inference
+			      </button>
+			    </h4>
+			    <div id="flush-collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+			      <div class="accordion-body">Placeholder content for this accordion. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+			    </div>
+			  </div>
 
-				</ul> -->
-			<H4 class="mt-5"><i class="bi bi-chevron-double-right"></i> Processification</H4>
-			
-			<p>As a matter of fact, every purpose needs a process, and stated simply; processification is the placement of process over purpose. It occurs when the process takes precedence over the purpose it was created to serve....<a href="{{ url_for('processification', theme='concept') }}">Read More</a></p>
-			
-			<H4 class="mt-5"><i class="bi bi-chevron-double-right"></i> Perspective Deficit</H4>
-			<p>Xxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxx...<a href="{{ url_for('perspective_deficit', theme='concept') }}">Read More</a></p>
-			
-			<H4 class="mt-5"><i class="bi bi-chevron-double-right"></i> Revisable Inference</H4>
-			<p>Xxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxx...<a href="{{ url_for('revisable_inference', theme='concept') }}">Read More</a></p>
-			
-			<H4 class="mt-5"><i class="bi bi-chevron-double-right"></i> Presence and Reflections</H4>
-			<p>Xxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxx...<a href="{{ url_for('presence_and_reflections', theme='concept') }}">Read More</a></p>
-			
-			<H4 class="mt-5"><i class="bi bi-chevron-double-right"></i> Reflective Spontaneity</H4>
-			<p>Xxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxx...<a href="{{ url_for('reflective_spontaneity', theme='concept') }}">Read More</a></p>
-			
-			<H4 class="mt-5"><i class="bi bi-chevron-double-right"></i> Countering</H4>
-			<p>Xxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxx...<a href="{{ url_for('countering', theme='concept') }}">Read More</a></p>
-			
-			<H4 class="mt-5"><i class="bi bi-chevron-double-right"></i> Subliminal Exposition</H4>
-			<p>Xxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxx...<a href="{{ url_for('subliminal_exposition', theme='concept') }}">Read More</a></p>
-			
-			<H4 class="mt-5"><i class="bi bi-chevron-double-right"></i> Agency</H4>
-			<p>Xxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxxXxxxxx xxxxxx xxxxx xxxxx...<a href="{{ url_for('agency', theme='concept') }}">Read More</a></p>
+			  <div class="accordion-item">
+			    <h4 class="accordion-header">
+			      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+			        Reflective Spontaneity
+			      </button>
+			    </h4>
+			    <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+			      <div class="accordion-body">Placeholder content for this accordion. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+			    </div>
+			  </div>
+
+			  <div class="accordion-item">
+			    <h4 class="accordion-header">
+			      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+			        Countering
+			      </button>
+			    </h4>
+			    <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+			      <div class="accordion-body">Placeholder content for this accordion. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+			    </div>
+			  </div>
+
+			  <div class="accordion-item">
+			    <h4 class="accordion-header">
+			      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+			        Subliminal Exposition
+			      </button>
+			    </h4>
+			    <div id="flush-collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+			      <div class="accordion-body">Placeholder content for this accordion. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+			    </div>
+			  </div>
+
+			  <div class="accordion-item">
+			    <h4 class="accordion-header">
+			      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+			        Agency
+			      </button>
+			    </h4>
+			    <div id="flush-collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionFlush">
+			      <div class="accordion-body">Placeholder content for this accordion. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+			    </div>
+			  </div>
+			</div>
 
 		</div>
 
