@@ -59,6 +59,9 @@ def videos():
 @application.route('/aspects')
 def aspects():
     return render_template('aspects.html')
+@application.route('/aspects2')
+def aspects2():
+    return render_template('aspects2.html')
 
 @application.route('/about')
 def about():

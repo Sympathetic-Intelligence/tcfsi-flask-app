@@ -544,6 +544,20 @@ circle:focus{
 	margin-top: 15rem!important;
 }
 
+.accordion-item, .accordion-button, .accordion-button:not(.collapsed) {
+	background-color: transparent;
+	color: white;
+}
+.accordion-header button{
+	font-size: unset;
+	font-weight: unset;
+}
+
+
+.container-fluid[data-bs-theme='concept'] a{
+	color: #fee201;
+}
+
 @media (max-width: 992px) { 
 	.origins .inner-main-content{
 		margin-bottom: 0;
