@@ -21,3 +21,5 @@ python application.py
 ```
 
 Go to: `localhost:5000` in your browser
+
+We are now an organization
