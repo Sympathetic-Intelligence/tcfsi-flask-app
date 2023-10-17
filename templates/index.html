@@ -6,37 +6,7 @@
 <div class="container-fluid si-gradient">
 	
   <div class="row">
-    <div class="col-lg-6 bg-green vh-100 center-circles-bg d-flex position-relative" id="si_center">
-      	<div class="text-dark my-auto mx-auto">
-      		
-			<div class="row">
-				<div class="col text-center">
-		      		<p class="mb-0 ms-3 fs-4"><span class="ms-3 fs-1">visit</span> the center for </p>
-		      		<p class="mt-0 fs-4"><span class="fs-1">Sympathetic Intelligence</span></p>
-	      		</div>
-	      	</div>	
-      		<div class="row">
-      			<div class="col-md-1 text-bg-light-25 p-3"></div>
-      			<div class="col-md-10 text-bg-light-25 p-3 fs-5">
-      				The Center for Sympathetic Inteligence brings together scientists and engineers from academia and industry in collaborative partnerships to tackle important research questions related to the concept of Sympathetic Intelligence and its applications.
-      				<span class="banner-mobile">We are happy to announce our latest partnership: <a href="{{ url_for('sos', theme='center') }}">TCfSI &amp; SOS - Two Initiatives, One campaign!</a></span>
-      			</div>
-      			
-      		</div>
-      		<div class="row">
-      			<div class="col text-center mb-3">
-      				<a href="{{ url_for('center_home', theme='center') }}">
-      					<img class="arr arr-right" src="{{url_for('static', filename='images/arr-left.svg')}}">
-      				</a>
-      			</div>
-      		</div>
 
-      	</div>
-
-	    <div class="banner row position-absolute bottom-0 start-50 translate-middle" id="banner">
-			<div class="col text-center"></div>
-		</div>
-    </div>
     
     <div class="col-lg-6 concept-circles-bg d-flex" id=si_concept>
       	<div class="text-dark my-auto mx-auto">
@@ -57,13 +27,46 @@
 			</div>
 			<div class="row">
       			<div class="col text-center">
-      				<a href="{{ url_for('concept_home', theme='concept') }}"><img class="arr arr-left" src="{{url_for('static', filename='images/arr-right.svg')}}"></a>
+      				<a href="{{ url_for('concept_home', theme='concept') }}"><img class="arr arr-left" src="{{url_for('static', filename='images/arr-left.svg')}}"></a>
       				<p>&nbsp;</p>
       				<p>&nbsp;</p>
       				<p>&nbsp;</p>
       			</div>
       		</div>
       	</div>
+    </div>
+
+
+	  <div class="col-lg-6 bg-green vh-100 center-circles-bg d-flex position-relative" id="si_center">
+      	<div class="text-dark my-auto mx-auto">
+
+			<div class="row">
+				<div class="col text-center">
+		      		<p class="mb-0 ms-3 fs-4"><span class="ms-3 fs-1">visit</span> the center for </p>
+		      		<p class="mt-0 fs-4"><span class="fs-1">Sympathetic Intelligence</span></p>
+	      		</div>
+	      	</div>
+      		<div class="row">
+      			<div class="col-md-1 text-bg-light-25 p-3"></div>
+      			<div class="col-md-10 text-bg-light-25 p-3 fs-5">
+      				The Center for Sympathetic Inteligence brings together scientists and engineers from academia and industry in collaborative partnerships to tackle important research questions related to the concept of Sympathetic Intelligence and its applications.
+      				<span class="banner-mobile">We are happy to announce our latest partnership: <a href="{{ url_for('sos', theme='center') }}">TCfSI &amp; SOS - Two Initiatives, One campaign!</a></span>
+      			</div>
+
+      		</div>
+      		<div class="row">
+      			<div class="col text-center mb-3">
+      				<a href="{{ url_for('center_home', theme='center') }}">
+      					<img class="arr arr-right" src="{{url_for('static', filename='images/arr-right.svg')}}">
+      				</a>
+      			</div>
+      		</div>
+
+      	</div>
+
+	    <div class="banner row position-absolute bottom-0 start-50 translate-middle" id="banner">
+			<div class="col text-center"></div>
+		</div>
     </div>
   </div>
 </div>
