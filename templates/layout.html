@@ -29,17 +29,21 @@
 <body class="min-vh-100">
 	<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary p-0 bg-dark " data-bs-theme="dark">
 		<div class="container-fluid">
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-			    <div class="navbar-nav">
-				    <a href="{{ url_for('center_home', theme='center') }}" class="nav-link"><i class="bi bi-chevron-double-left"></i> Visit the Center for SI</a>
-						<a href="{{ url_for('home')}}" class="nav-link"><i class="bi bi-houses"></i></a>
-						<a href="{{ url_for('concept_home', theme='concept') }}" class="nav-link">Explore the Concept of SI <i class="bi bi-chevron-double-right"></i> </a>
-				</div>
-		    </div>
-		  </div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			
+
+
+		<div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a href="{{ url_for('center_home', theme='center') }}" class="nav-link"><i class="bi bi-chevron-double-right"></i> Visit the Center for SI</a>
+				<a href="{{ url_for('home')}}" class="nav-link"><i class="bi bi-houses"></i></a>
+				<a href="{{ url_for('concept_home', theme='concept') }}" class="nav-link">Explore the Concept of SI <i class="bi bi-chevron-double-left"></i> </a>
+			</div>
+		</div>
+		</div>
 	</nav>
 
 	{% block content %}{% endblock %}
