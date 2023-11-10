@@ -10,6 +10,21 @@ purple #390052
 */
 
 /* concept styles */
+#google_translate_element {
+  color: transparent;
+  position: absolute;
+  margin-top: 8px;
+  padding-left: 25px;
+  left: 5px;
+  z-index: 1;
+}
+#google_translate_element a {
+  display: none;
+}
+
+div.goog-te-gadget {
+  color: transparent !important;
+}
 html, body{
 	font-family: acumin-pro, sans-serif;
 	font-weight: 300;
