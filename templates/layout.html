@@ -25,7 +25,9 @@
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+
 <body class="min-vh-100">
+
 	<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary p-0 bg-dark " data-bs-theme="dark">
 		<div class="container-fluid">
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +35,17 @@
 		    </button>
 		    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
 			    <div class="navbar-nav">
+					<div id="google_translate_element"></div>
+					<script type="text/javascript">
+				function googleTranslateElementInit() {
+  				new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+				}
+				</script>
+					<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 				    <a href="{{ url_for('concept_home', theme='concept') }}" class="nav-link"><i class="bi bi-chevron-double-left"></i> Explore the Concept of SI</a>
 						<a href="{{ url_for('home')}}" class="nav-link"><i class="bi bi-houses"></i></a>
 					<a href="{{ url_for('center_home', theme='center') }}" class="nav-link">Visit the Center for SI <i class="bi bi-chevron-double-right"></i> </a>
-
 				</div>
 		    </div>
 		  </div>
@@ -45,4 +54,5 @@
 	{% block content %}{% endblock %}
 
 </body>
+
 </html>
