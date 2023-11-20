@@ -10,6 +10,22 @@ purple #390052
 */
 
 /* concept styles */
+
+#google_translate_element {
+  color: transparent;
+  position: absolute;
+  margin-top: 8px;
+  padding-left: 25px;
+  left: 5px;
+  z-index: 1;
+}
+#google_translate_element a {
+  display: none;
+}
+div.goog-te-gadget {
+  color: transparent !important;
+}
+
 html, body{
 	font-family: acumin-pro, sans-serif;
 	font-weight: 300;
@@ -111,20 +127,21 @@ html[data-bs-theme='center'] .big-image.center-home [class^='col']{
 		background-color: #fff;
 		position: relative;
 }
-.center-circles-bg{
+ .center-circles-bg{
 	background-image: url(../images/semi-circles.svg);
     background-repeat: no-repeat;
     background-size: 450px;
-    background-position-x: calc(100% + 225px);
+      background-position-x: -225px;
+/*     background-position-y: calc(1% + 125px); */
     background-position-y: 1%;
     color: #fff;
+
 }
 .concept-circles-bg{
 	background-image: url(../images/semi-circles-fill.svg);
     background-repeat: no-repeat;
     background-size: 450px;
-    background-position-x: -225px;
-/*     background-position-y: calc(1% + 125px); */
+      background-position-x: calc(100% + 225px);
     background-position-y: 1%;
     color: #fff;
 }
@@ -160,7 +177,7 @@ html[data-bs-theme='center'] .big-image.center-home [class^='col']{
 
 .text-bg-light-25 {
     color: #000!important;
-    background-color: RGBA(255,255,255,var(--bs-bg-opacity,.25))!important;
+    background-color: RGBA(255,255,255,var(--bg-bs-opacity,.25))!important;
 }
 
 .origins{
