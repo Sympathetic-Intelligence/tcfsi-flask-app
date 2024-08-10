@@ -13,7 +13,7 @@ import ast
 import re
 import uuid, hashlib, datetime, math, urllib
 
-application = Flask(__name__)
+application = Flask(__name__, template_folder='templates')
 
 
 @application.route('/')
