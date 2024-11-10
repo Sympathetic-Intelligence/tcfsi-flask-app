@@ -56,8 +56,11 @@ _j(function() {
 	_j(".tier-illustration").on('click',function(){
 		location.href = '/concept_home?theme=concept';
 	})
-	_j(".banner").on('click',function(){
-		location.href = '/sos?theme=center';
+	// _j(".banner.top").on('click',function(){
+	// 	location.href = '/sos?theme=center';
+	// })
+	_j(".banner.bottom").on('click',function(){
+		location.href = '/little_book?theme=center';
 	})
 
 });

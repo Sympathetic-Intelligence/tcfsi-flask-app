@@ -108,6 +108,10 @@ def volunteering():
 def donations():
     return render_template('donations.html')
 
+@application.route('/little_book')
+def little_book():
+    return render_template('little_book.html')
+
 
 @application.route('/contact')
 def contact():

@@ -11,18 +11,17 @@
 
     
     <div class="col-lg-6 concept-circles-bg d-flex" id=si_concept>
-      	<div class="text-dark my-auto mx-auto">
+      	<div class="text-dark my-auto mx-auto si_concept_inner">
 
       		<div class="row">
-				<div class="col text-center text-white">
+						<div class="col text-center text-white">
 		      		<p class="mb-0 fs-4"><span class="fs-1">explore</span> the concept of</p>
 		      		<p class="mt-0 ms-3"><span class="fs-1">Sympathetic Intelligence</span></p>
-
-				</div>
+						</div>
 	      	</div>	
       		<div class="row">
-				<div class="col-md-1 text-bg-light-25 p-3"></div>
-				<div class="col-md-9 text-bg-light-25 p-3 fs-5">
+					<div class="col-md-1 text-bg-light-25 p-3"></div>
+					<div class="col-md-9 text-bg-light-25 p-3 fs-5">
 
 
 					A <em>Socio-Neurological</em> phenomenon that reveals our innate capacity to connect & conform to the novel demands of each moment. It is visible in our behavior and directly relates to the quality of our common existence.
@@ -43,35 +42,46 @@
 
 
 	  <div class="col-lg-6 bg-green vh-100 center-circles-bg d-flex position-relative" id="si_center">
-      	<div class="text-dark my-auto mx-auto">
+      <div class="text-dark my-auto mx-auto si_center_inner">
 
-			<div class="row">
-				<div class="col text-center">
-		      		<p class="mb-0 ms-3 fs-4"><span class="ms-3 fs-1">visit</span> the center for </p>
-		      		<p class="mt-0 fs-4"><span class="fs-1">Sympathetic Intelligence</span></p>
-	      		</div>
-	      	</div>
-      		<div class="row">
+				<div class="row">
+					<div class="col text-center">
+			      		<p class="mb-0 ms-3 fs-4"><span class="ms-3 fs-1">visit</span> the center for </p>
+			      		<p class="mt-0 fs-4"><span class="fs-1">Sympathetic Intelligence</span></p>
+		      		</div>
+		    </div>
+	      <div class="row">
       			<div class="col-md-2 p-3"></div>
       			<div class="col-md-10 text-bg-light-25 p-3 fs-5">
+
+      				<span class="banner-mobile top">Download your copy of: <a href="{{ url_for('little_book', theme='center') }}">The Little Book of Sympathetic Intelligence</a></span>
+
       				The Center for Sympathetic Intelligence brings together scientists and engineers from academia and industry in collaborative partnerships to tackle important research questions related to the concept of Sympathetic Intelligence and its applications.
-      				<span class="banner-mobile">We are happy to announce our latest partnership: <a href="{{ url_for('sos', theme='center') }}">TCfSI &amp; SOS - Two Initiatives, One campaign!</a></span>
+      				
+      				<span class="banner-mobile bottom">We are happy to announce our latest partnership: <a href="{{ url_for('sos', theme='center') }}">TCfSI &amp; SOS - Two Initiatives, One campaign!</a></span>
       			</div>
 
-      		</div>
-      		<div class="row">
-      			<div class="col text-center mb-3">
-      				<a href="{{ url_for('center_home', theme='center') }}">
-      					<img class="arr arr-right" src="{{url_for('static', filename='images/arr-right.svg')}}">
-      				</a>
-      			</div>
-      		</div>
+	      </div>
+	      <div class="row">
+	      			<div class="col text-center mb-3">
+	      				<a href="{{ url_for('center_home', theme='center') }}">
+	      					<img class="arr arr-right" src="{{url_for('static', filename='images/arr-right.svg')}}">
+	      				</a>
+	      			</div>
+	      </div>
+     	</div>
+		
+			<!-- <div class="banner top row position-absolute top-0 start-50 translate-middle" id="banner_top"></div> -->
 
-      	</div>
-
-	    <div class="banner row position-absolute bottom-0 start-50 translate-middle" id="banner">
+			<div class="banner bottom row position-absolute bottom-0 start-50 translate-middle" id="banner_bottom"></div>
+	    
 			<div class="col text-center"></div>
+
 		</div>
+
+		
+
+
     </div>
   </div>
 
