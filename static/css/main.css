@@ -542,8 +542,19 @@ circle:focus{
 .banner-mobile{
 	display: none;
 }
-.banner{
+.banner.bottom{
 	margin-bottom: 200px;
+	padding:50px 50px;
+	width:100%;
+	background-image: url(../images/little-book-banner.png);
+	background-position: center;
+	background-repeat: no-repeat;
+  	background-size: contain;
+  	cursor: pointer;
+
+}
+.banner.top{
+	margin-top: 150px;
 	padding:50px 50px;
 	width:100%;
 	background-image: url(../images/ribbon.svg);
@@ -553,11 +564,12 @@ circle:focus{
   	cursor: pointer;
 
 }
+
 .tier-illustration{
 	cursor: pointer;
 }
 
-#si_concept > div, #si_center > div{
+#si_concept > .si_concept_inner, #si_center > .si_center_inner{
 	margin-top: 15rem!important;
 }
 

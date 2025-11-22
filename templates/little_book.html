@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% include 'center_nav.html' %}
+<div class="container-fluid min-vh-100 d-flex flex-column">	
+	<div class="row big-image inner-page">
+		<div class="col-lg-3 mt-5">
+			
+		</div>
+		<div class="col-lg-6 bg-white mt-5">
+			<div id="donate-button-container" class="justify-content-center d-flex mt-2">
+						<div id="donate-button"></div>
+						<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+						<script>
+						PayPal.Donation.Button({
+						env:'production',
+						hosted_button_id:'2CEQEM5YVDZ2N',
+						image: {
+						src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+						alt:'Donate with PayPal button',
+						title:'PayPal - The safer, easier way to pay online!',
+						}
+						}).render('#donate-button');
+						</script>
+					</div>
+			<div class="inner-main-content">
+				<h2>Crowd Funding</h2> 
+
+				<p>stuff for Robert to write...</p>
+			</div>
+		</div>
+	</div>
+</div> <!-- container -->
+{% endblock %}
