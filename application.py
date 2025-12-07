@@ -116,6 +116,7 @@ def little_book():
     j = json.loads(r.text)
     country = j['country']
     # country="IE"
+    print(country)
     return render_template('little_book.html', country=country)
 
 
