@@ -66,8 +66,12 @@ _j(function() {
 
 
 	// chek ip
-	_j.get("http://ipinfo.io", function(response) {
-		console.log(response);
-	}, "jsonp");
+	// _j.get("http://ipinfo.io", function(response) {
+	// 	console.log(response);
+	// 	console.log(response.country);
+	// 	if (response.country == "US"){
+	// 		location.href = '/sos?theme=center';
+	// 	}
+	// }, "jsonp");
 
 });
