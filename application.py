@@ -111,7 +111,7 @@ def donations():
 
 @application.route('/little_book')
 def little_book():
-    url = 'http://ipinfo.io'
+    url = 'http://ipinfo.io?token=2148859d0efe1c'
     r = requests.get(url)
     j = json.loads(r.text)
     country = j['country']
