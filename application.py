@@ -6,6 +6,7 @@ import numpy as np
 import json
 import time 
 import math
+import requests
 
 import os
 from tqdm import tqdm
@@ -110,7 +111,12 @@ def donations():
 
 @application.route('/little_book')
 def little_book():
-    return render_template('little_book.html')
+    url = 'http://ipinfo.io'
+    r = requests.get(url)
+    j = json.loads(r.text)
+    country = j['country']
+
+    return render_template('little_book.html', country=country)
 
 
 @application.route('/contact')
