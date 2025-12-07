@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, make_response, render_template, redirect, url_for, session
 from flask import Markup
-
+import requests
 from collections import defaultdict
 import operator
 import numpy as np
