@@ -110,6 +110,7 @@ def donations():
 
 @application.route('/little_book')
 def little_book():
+    country="IE"
     return render_template('little_book.html')
 
 
