@@ -63,15 +63,4 @@ _j(function() {
 		location.href = '/little_book?theme=center';
 	})
 
-
-
-	// chek ip
-	// _j.get("http://ipinfo.io", function(response) {
-	// 	console.log(response);
-	// 	console.log(response.country);
-	// 	if (response.country == "US"){
-	// 		location.href = '/sos?theme=center';
-	// 	}
-	// }, "jsonp");
-
 });
