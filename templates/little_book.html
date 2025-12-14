@@ -24,7 +24,15 @@
 				</script>
 			</div>
 			<div class="inner-main-content mt-5">
-				<h2>The Little Book of Sympathetic Intelligence Funding Campaign </h2> 
+				<h2 class="text-center">The Little Book of Sympathetic Intelligence Funding Campaign </h2> 
+				<h3 class="display-3 text-center">
+					<img src="{{ url_for('static', filename='images/target.png') }}" class="ms-2" style="width: 100px; height: 100px;">
+					{% if country == 'US' %}$2,000{% else %}€1,700{% endif %}
+					<img src="{{ url_for('static', filename='images/received.png') }}" class="ms-5" style="width: 80px; height: 80px;">
+					{% if country == 'US' %}$0{% else %}€0{% endif %}
+				
+				
+				</h3>
 				<!--test-->
 
 				<div class="row mt-4">
