@@ -113,6 +113,8 @@ def donations():
 @application.route('/little_book')
 def little_book():
 
+    # print(ipinfo.__version__)
+
     try:
         ip_address = request.remote_addr
         print(ip_address)
