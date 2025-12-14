@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, make_response, render_template, redirect, url_for, session
 from flask import Markup
 import requests
+import ipinfo
 from collections import defaultdict
 import operator
 import numpy as np
@@ -111,12 +112,29 @@ def donations():
 
 @application.route('/little_book')
 def little_book():
-    url = 'http://ipinfo.io?token=2148859d0efe1c'
-    r = requests.get(url)
-    j = json.loads(r.text)
-    country = j['country']
-    # country="IE"
-    print(country)
+
+    try:
+        ip_address = request.remote_addr
+        print(ip_address)
+
+
+        access_token = '2148859d0efe1c'
+        handler = ipinfo.getHandler(access_token)
+        # ip_address = '216.239.36.21'
+        details = handler.getDetails(ip_address)
+        print(details.country)
+        print(details.city)
+        print(details.loc)
+        print(details.postal)
+        print(details.region)
+        print(details.timezone)
+        print(details.country_name)
+
+        country = details.country
+    except Exception as e:
+        print(e)
+        country = 'US'
+        
     return render_template('little_book.html', country=country)
 
 
