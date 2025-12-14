@@ -112,8 +112,9 @@ def donations():
 
 @application.route('/little_book')
 def little_book():
-    # 
-    ip_address = request.remote_addr
+
+
+    ip_address = requests.get('https://checkip.amazonaws.com').text.strip()
     print(ip_address)
 
     try:
