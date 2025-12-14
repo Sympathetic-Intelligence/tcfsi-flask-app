@@ -112,32 +112,30 @@ def donations():
 
 @application.route('/little_book')
 def little_book():
-
-    # print(ipinfo.__version__)
+    # 
+    ip_address = request.remote_addr
+    print(ip_address)
 
     try:
-        ip_address = request.remote_addr
-        print(ip_address)
-
-
         access_token = '2148859d0efe1c'
         handler = ipinfo.getHandler(access_token)
         # ip_address = "109.79.233.60"
         details = handler.getDetails(ip_address)
-        print(details.country)
-        print(details.city)
-        print(details.loc)
-        print(details.postal)
-        print(details.region)
-        print(details.timezone)
-        print(details.country_name)
-
+        # print(details.country)
+        # print(details.city)
+        # print(details.loc)
+        # print(details.postal)
+        # print(details.region)
+        # print(details.timezone)
+        # print(details.country_name)
+    
         country = details.country
     except Exception as e:
         print(e)
-        country = 'hello'
+        country = 'Err'
+    
         
-    return render_template('little_book.html', country=country)
+    return render_template('little_book.html', country=country,ip_address=ip_address)
 
 
 @application.route('/contact')
