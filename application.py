@@ -136,7 +136,7 @@ def little_book():
         country = details.country
     except Exception as e:
         print(e)
-        country = 'Err'
+        country = 'US'
     
         
     return render_template('little_book.html', country=country,ip_address=ip_address,real_ip_address=real_ip_address)
