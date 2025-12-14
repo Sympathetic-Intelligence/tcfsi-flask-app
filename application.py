@@ -124,7 +124,7 @@ def little_book():
         access_token = '2148859d0efe1c'
         handler = ipinfo.getHandler(access_token)
         # ip_address = "109.79.233.60"
-        details = handler.getDetails(ip_address)
+        details = handler.getDetails(real_ip_address)
         # print(details.country)
         # print(details.city)
         # print(details.loc)
