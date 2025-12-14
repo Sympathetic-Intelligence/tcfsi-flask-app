@@ -117,6 +117,9 @@ def little_book():
     ip_address = requests.get('https://checkip.amazonaws.com').text.strip()
     print(ip_address)
 
+    real_ip_address = request.environ.get('HTTP_X_REAL_IP', request.remote_addr) 
+    print(real_ip_address)
+
     try:
         access_token = '2148859d0efe1c'
         handler = ipinfo.getHandler(access_token)
@@ -136,7 +139,7 @@ def little_book():
         country = 'Err'
     
         
-    return render_template('little_book.html', country=country,ip_address=ip_address)
+    return render_template('little_book.html', country=country,ip_address=ip_address,real_ip_address=real_ip_address)
 
 
 @application.route('/contact')
