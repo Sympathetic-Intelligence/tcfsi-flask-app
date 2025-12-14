@@ -122,7 +122,7 @@ def little_book():
 
         access_token = '2148859d0efe1c'
         handler = ipinfo.getHandler(access_token)
-        # ip_address = '216.239.36.21'
+        # ip_address = "109.79.233.60"
         details = handler.getDetails(ip_address)
         print(details.country)
         print(details.city)
@@ -135,7 +135,7 @@ def little_book():
         country = details.country
     except Exception as e:
         print(e)
-        country = 'US'
+        country = 'hello'
         
     return render_template('little_book.html', country=country)
 
